@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decor Eventos | Vilhena - RO</title>
-    <meta name="description" content="Transformando seu sonho em realidade. Festas infantis, aniversários, festas de mesas, eventos decorativos, casamentos, chá de bebê, cenários personalizados e locação em Vilhena - RO. @decoreeventossr">
+    <title>Gustavo Web Studio | Criação de Sites, Catálogos & Soluções Digitais</title>
+    <meta name="description" content="Desenvolvimento de sites sob medida, cardápios digitais, vitrines e portfólios de alto impacto em Vilhena - RO e todo o Brasil.">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -23,20 +23,22 @@
                 extend: {
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        serif: ['Cormorant Garamond', 'serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
                     },
                     colors: {
-                        gold: {
-                            50: '#FDFBF7',
-                            100: '#F6EEDB',
-                            200: '#EBDDB5',
-                            300: '#D5BC82',
-                            400: '#C5A059',
-                            500: '#B08339',
-                            600: '#966D2D',
-                            700: '#7A5524',
-                            900: '#3D2A12',
-                            950: '#22170A',
+                        brand: {
+                            50: '#EEF2FF',
+                            100: '#E0E7FF',
+                            400: '#818CF8',
+                            500: '#6366F1',
+                            600: '#4F46E5',
+                            700: '#4338CA',
+                            900: '#1E1B4B',
+                        },
+                        slateDark: {
+                            800: '#1E293B',
+                            900: '#0F172A',
+                            950: '#090D16',
                         }
                     }
                 }
@@ -46,96 +48,65 @@
 
     <style>
         body {
-            background-color: #FDFBF7;
-            color: #22170A;
+            background-color: #090D16;
+            color: #F8FAFC;
             overflow-x: hidden;
         }
-        .glass-nav {
-            background: rgba(253, 251, 247, 0.94);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
+        .glass-header {
+            background: rgba(9, 13, 22, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
         }
-        @keyframes pulse-gold {
-            0% { transform: scale(0.95); opacity: 0.8; }
-            70% { transform: scale(1.25); opacity: 0; }
-            100% { transform: scale(1.25); opacity: 0; }
+        .hero-glow {
+            background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.25) 0%, rgba(9, 13, 22, 0) 70%);
         }
-        .wa-glow::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: 9999px;
-            background-color: #25D366;
-            z-index: -1;
-            animation: pulse-gold 2s infinite;
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 20px 40px -15px rgba(79, 70, 229, 0.25);
         }
     </style>
 </head>
-<body class="antialiased selection:bg-gold-500 selection:text-white">
-
-    <!-- TOP BAR DOURADA -->
-    <div class="bg-gold-950 text-gold-100 text-xs py-2.5 px-4 border-b border-gold-900">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-            <div class="flex items-center gap-4">
-                <span class="inline-flex items-center gap-1.5 font-medium text-emerald-400">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    Transformando seu sonho em realidade em Vilhena
-                </span>
-                <span class="hidden md:inline-flex items-center gap-1.5 text-gold-200/80">
-                    <i class="fa-solid fa-location-dot text-gold-400"></i>
-                    Vilhena - RO
-                </span>
-            </div>
-            <div class="flex items-center gap-4 ml-auto sm:ml-0">
-                <a href="https://instagram.com/decoreventos522" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-gold-100 hover:text-white transition font-medium">
-                    <i class="fa-brands fa-instagram text-pink-400"></i>
-                    @decoreventos522
-                </a>
-                <a href="https://wa.me/5569996006585" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-gold-100 hover:text-white transition font-medium">
-                    <i class="fa-brands fa-whatsapp text-emerald-400"></i>
-                    (69) 99600-6585
-                </a>
-            </div>
-        </div>
-    </div>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
 
     <!-- NAVBAR -->
-    <header class="sticky top-0 z-45 glass-nav border-b border-gold-200/60 shadow-xs">
+    <header class="sticky top-0 z-50 glass-header border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Logo -->
                 <a href="#inicio" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-crown text-lg"></i>
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-purple-600 flex items-center justify-center text-white font-display font-bold text-lg shadow-lg shadow-brand-500/30 group-hover:scale-105 transition">
+                        &lt;/&gt;
                     </div>
                     <div>
-                        <span class="font-serif font-extrabold text-base sm:text-xl lg:text-2xl text-gold-950 block leading-none">
-                            Decor Eventos
+                        <span class="font-display font-bold text-lg sm:text-xl text-white tracking-tight block leading-none">
+                            Gustavo <span class="text-brand-400">Web Studio</span>
                         </span>
-                        <span class="text-[10px] uppercase tracking-widest text-gold-600 font-bold">
-                            @decoreventos522 • Vilhena
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-semibold">
+                            Web Designer Profissional • Vilhena - RO
                         </span>
                     </div>
                 </a>
 
-                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-gold-900/80">
-                    <a href="#inicio" class="hover:text-gold-600 transition">Início</a>
-                    <a href="#servicos" class="hover:text-gold-600 transition">Serviços</a>
-                    <a href="#portifolio" class="hover:text-gold-600 transition">Portfólio & Festas</a>
-                    <a href="#essencia" class="hover:text-gold-600 transition">Essência & Qualidade</a>
-                    <a href="#contato" class="hover:text-gold-600 transition">Orçamento</a>
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-slate-300">
+                    <a href="#catalogo" class="hover:text-brand-400 transition">Catálogo de Modelos</a>
+                    <a href="#solucoes" class="hover:text-brand-400 transition">Opções & Recursos</a>
+                    <a href="#acordos" class="hover:text-brand-400 transition">Planos & Acordos</a>
+                    <a href="#avaliacoes" class="hover:text-brand-400 transition">Avaliações</a>
+                    <a href="#faq" class="hover:text-brand-400 transition">Dúvidas</a>
                 </nav>
 
-                <div class="flex items-center gap-2.5 sm:gap-3">
-                    <a href="https://instagram.com/decoreeventos522" target="_blank" rel="noopener noreferrer"
-                       aria-label="Instagram @decoreventos522"
-                       class="w-10 h-10 rounded-xl bg-pink-50 hover:bg-pink-100 text-pink-600 border border-pink-200 flex items-center justify-center transition shadow-xs">
-                        <i class="fa-brands fa-instagram text-lg"></i>
-                    </a>
-                    <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Decor%20Eventos%20(%40decoreventos522)%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+                <!-- CTA Button -->
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/5569993696263?text=Ol%C3%A1%20Gustavo!%20Vi%20seu%20portf%C3%B3lio%20de%20Web%20Designer%20e%20quero%20meu%20site%20pronto%20em%201%20hora!" 
                        target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-xl shadow-md transition">
-                        <i class="fa-brands fa-whatsapp text-lg"></i>
-                        <span class="hidden sm:inline">WhatsApp</span>
+                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-bold px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/30 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>(69) 99369-6263</span>
                     </a>
                 </div>
             </div>
@@ -143,45 +114,559 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section id="inicio" class="relative overflow-hidden bg-gradient-to-b from-gold-100/70 via-gold-50/20 to-transparent pt-12 pb-20 sm:pt-20 sm:pb-28">
+    <section id="inicio" class="relative hero-glow pt-16 pb-24 sm:pt-24 sm:pb-32 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 bg-slate-900/90 border border-slate-700/80 px-4 py-1.5 rounded-full mb-8 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="text-xs font-semibold text-slate-300">Web Designer Profissional • Protótipo em 10 min • Site Pronto em 1 Hora</span>
+            </div>
+
+            <h1 class="font-display font-bold text-4xl sm:text-6xl lg:text-7xl text-white max-w-4xl mx-auto leading-[1.08] tracking-tight mb-6">
+                Seu site profissional <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-purple-400 to-emerald-400">pronto em 1 hora</span> para vender todos os dias.
+            </h1>
+
+            <p class="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-10">
+                Web Designer Profissional especializado em sites sob medida, catálogos interativos e vitrines de alta conversão. <strong class="text-white">Entrega do protótipo em até 10 minutos</strong>, prévia navegável em 25 minutos e site publicado em 1 hora!
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/5569993696263?text=Ol%C3%A1%20Gustavo!%20Quero%20receber%20o%20prot%C3%B3tipo%20do%20meu%20site%20em%2010%20minutos!" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-emerald-600/25 transition text-sm sm:text-base">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    Pedir Protótipo em 10 Minutos
+                </a>
+                <a href="#catalogo" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 font-bold px-8 py-4 rounded-2xl transition text-sm sm:text-base">
+                    <i class="fa-solid fa-layer-group text-brand-400"></i>
+                    Explorar Catálogo de Modelos
+                </a>
+            </div>
+
+            <!-- Métricas de Velocidade e Autoridade -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16 pt-12 border-t border-slate-800/80">
+                <div>
+                    <span class="font-display font-bold text-3xl sm:text-4xl text-emerald-400 block">10 min</span>
+                    <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold mt-1 block">Entrega do Protótipo</span>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-3xl sm:text-4xl text-brand-400 block">25 min</span>
+                    <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold mt-1 block">Entrega da Prévia</span>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-3xl sm:text-4xl text-purple-400 block">1 hora</span>
+                    <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold mt-1 block">Site 100% Pronto</span>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-3xl sm:text-4xl text-amber-400 block">5.0 ★</span>
+                    <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold mt-1 block">Web Designer Pro</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO DE MODELOS INTERATIVO -->
+    <section id="catalogo" class="py-20 sm:py-28 bg-slateDark-900/50 border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-10 items-center">
-                <div class="lg:col-span-7 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 bg-white border border-gold-300 px-4 py-1.5 rounded-full mb-6 shadow-xs">
-                        <i class="fa-solid fa-sparkles text-gold-600 text-sm"></i>
-                        <span class="text-xs font-bold text-gold-950">Transformando seu sonho em realidade</span>
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brand-400 font-bold text-xs uppercase tracking-[0.2em]">Catálogo de Demonstrações</span>
+                <h2 class="font-display font-bold text-3xl sm:text-5xl text-white mt-2">
+                    Modelos Prontos para Cada Nicho
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">
+                    Filtre por segmento para conhecer o nível de acabamento, design e funcionalidades que entrego para empresas.
+                </p>
+            </div>
+
+            <!-- Filtros do Catálogo -->
+            <div class="flex flex-wrap items-center justify-center gap-2.5 mb-12">
+                <button onclick="filterCatalog('todos')" class="cat-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-brand-600 text-white transition">
+                    Todos os Projetos
+                </button>
+                <button onclick="filterCatalog('eventos')" class="cat-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition">
+                    🎈 Eventos & Decoração
+                </button>
+                <button onclick="filterCatalog('moda')" class="cat-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition">
+                    👗 Moda & Boutiques
+                </button>
+                <button onclick="filterCatalog('gastronomia')" class="cat-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition">
+                    🍰 Confeitaria & Delivery
+                </button>
+                <button onclick="filterCatalog('servicos')" class="cat-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition">
+                    💼 Clínicas & Profissionais
+                </button>
+            </div>
+
+            <!-- Grid de Projetos -->
+            <div id="catalog-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projeto 1: Atelier Lumière Eventos -->
+                <article class="catalog-card bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden flex flex-col justify-between card-hover" data-cat="eventos">
+                    <div>
+                        <div class="h-56 relative overflow-hidden bg-slate-800">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.src='https://placehold.co/800x500/1E293B/818CF8?text=Atelier+Lumiere'"
+                                 alt="Portfólio Atelier Lumière Eventos" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-amber-500 text-slate-950 text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">
+                                Luxo & Eventos
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white">Portfólio Atelier Lumière Eventos</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed mt-2">
+                                Site institucional em tons dourados com galeria filtrável por tipo de festa (infantil, casamentos, mesas) e botões de orçamento direto no WhatsApp.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mt-4">
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Galeria Filtrável</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Botão Instagram</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">WhatsApp Direto</span>
+                            </div>
+                        </div>
                     </div>
+                    <div class="px-6 pb-6 pt-2 flex items-center gap-2">
+                        <button onclick="openPreviewModal('Portfólio Atelier Lumière Eventos', 'Ideal para decoradores, buffets, fotógrafos e organizadores de eventos que precisam encantar visualmente o cliente antes do orçamento.', ['Design exclusivo na paleta da marca', 'Galeria de fotos dividida por categorias', 'Integração direta com Instagram e WhatsApp', 'Adaptado 100% para celulares'])" 
+                                class="flex-1 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-3 rounded-xl border border-slate-700 transition">
+                            Ver Detalhes
+                        </button>
+                        <button onclick="requestProject('Modelo: Portfólio Atelier Lumière Eventos')" 
+                                class="flex-1 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold py-3 rounded-xl transition">
+                            Quero Esse Modelo
+                        </button>
+                    </div>
+                </article>
 
-                    <h1 class="font-serif font-extrabold text-4xl sm:text-6xl lg:text-7xl text-gold-950 leading-[1.08] tracking-tight mb-6">
-                        Sua festa do jeitinho que você sempre <span class="italic text-gold-600">sonhou</span>.
-                    </h1>
+                <!-- Projeto 2: Maison Éclat Boutique -->
+                <article class="catalog-card bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden flex flex-col justify-between card-hover" data-cat="moda">
+                    <div>
+                        <div class="h-56 relative overflow-hidden bg-slate-800">
+                            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.src='https://placehold.co/800x500/1E293B/818CF8?text=Maison+Eclat+Boutique'"
+                                 alt="Vitrine Maison Éclat Boutique" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-brand-500 text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">
+                                Vitrine & Reserva
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white">Vitrine Digital Maison Éclat</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed mt-2">
+                                Lookbook interativo com seleção de tamanhos (P, M, G), sacola de reserva inteligente que envia o pedido pronto para o WhatsApp da loja e mapa integrado.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mt-4">
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Sacola de Reserva</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Filtro de Coleções</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Google Maps</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex items-center gap-2">
+                        <button onclick="openPreviewModal('Vitrine Digital Maison Éclat', 'Perfeito para lojas de roupas, calçados, semijoias e acessórios que querem mostrar o estoque sem pagar taxas de marketplaces.', ['Seletor de tamanhos e variações', 'Sacola de reserva com cálculo automático', 'Envio da lista de peças pronta no WhatsApp', 'Localização com mapa e botão copiar endereço'])" 
+                                class="flex-1 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-3 rounded-xl border border-slate-700 transition">
+                            Ver Detalhes
+                        </button>
+                        <button onclick="requestProject('Modelo: Vitrine Digital Maison Éclat')" 
+                                class="flex-1 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold py-3 rounded-xl transition">
+                            Quero Esse Modelo
+                        </button>
+                    </div>
+                </article>
 
-                    <p class="text-base sm:text-lg text-gold-900/80 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8">
-                        Criatividade, qualidade, estilo e bom gosto em cada detalhe. Especialistas em festas infantis, aniversários, festas de mesas, casamentos, chá de bebê e eventos decorativos em Vilhena - RO.
+                <!-- Projeto 3: Confeitaria & Cardápio -->
+                <article class="catalog-card bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden flex flex-col justify-between card-hover" data-cat="gastronomia">
+                    <div>
+                        <div class="h-56 relative overflow-hidden bg-slate-800">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.src='https://placehold.co/800x500/1E293B/818CF8?text=Cardapio+Digital'"
+                                 alt="Cardápio Digital Confeitaria" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-emerald-500 text-slate-950 text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">
+                                Zero Taxas
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white">Cardápio & Encomendas</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed mt-2">
+                                Sistema prático para confeitarias, hamburguerias e restaurantes receberem pedidos organizados no WhatsApp sem pagar comissões por venda.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mt-4">
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Escolha de Sabores</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Cálculo de Total</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Pedido Estruturado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex items-center gap-2">
+                        <button onclick="openPreviewModal('Cardápio & Encomendas', 'Elimine mensagens confusas no WhatsApp. O cliente monta o pedido, escolhe recheios/tamanhos e envia tudo somado.', ['Cardápio interativo por categorias', 'Adicionais e observações personalizadas', 'Sem mensalidade abusiva ou comissão por pedido', 'Link direto para colocar na bio do Instagram'])" 
+                                class="flex-1 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-3 rounded-xl border border-slate-700 transition">
+                            Ver Detalhes
+                        </button>
+                        <button onclick="requestProject('Modelo: Cardápio & Encomendas')" 
+                                class="flex-1 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold py-3 rounded-xl transition">
+                            Quero Esse Modelo
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Projeto 4: Clínicas & Profissionais -->
+                <article class="catalog-card bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden flex flex-col justify-between card-hover" data-cat="servicos">
+                    <div>
+                        <div class="h-56 relative overflow-hidden bg-slate-800">
+                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.src='https://placehold.co/800x500/1E293B/818CF8?text=Clinicas+e+Servicos'"
+                                 alt="Landing Page Clínicas e Serviços" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-purple-500 text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">
+                                Alta Conversão
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white">Página de Autoridade & Agendamento</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed mt-2">
+                                Ideal para clínicas de estética, dentistas, advogados e prestadores de serviço que buscam transmitir confiança imediata e agendar consultas.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mt-4">
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Lista de Procedimentos</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Depoimentos</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Agendamento Rápido</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex items-center gap-2">
+                        <button onclick="openPreviewModal('Página de Autoridade & Agendamento', 'Projetada para anúncios no Instagram e Google. Destaca seus diferenciais, estrutura e leva o paciente direto para a recepção.', ['Apresentação profissional da equipe/especialista', 'Seção de dúvidas frequentes (FAQ)', 'Botões estratégicos de agendamento', 'Carregamento ultra-rápido no 4G/5G'])" 
+                                class="flex-1 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-3 rounded-xl border border-slate-700 transition">
+                            Ver Detalhes
+                        </button>
+                        <button onclick="requestProject('Modelo: Página de Autoridade & Agendamento')" 
+                                class="flex-1 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold py-3 rounded-xl transition">
+                            Quero Esse Modelo
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Projeto 5: Catálogo Automotivo / Imobiliário -->
+                <article class="catalog-card bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden flex flex-col justify-between card-hover" data-cat="servicos">
+                    <div>
+                        <div class="h-56 relative overflow-hidden bg-slate-800">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.src='https://placehold.co/800x500/1E293B/818CF8?text=Catalogo+Imoveis'"
+                                 alt="Catálogo Imóveis e Veículos" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-sky-500 text-slate-950 text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">
+                                Busca Avançada
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white">Catálogo de Imóveis & Veículos</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed mt-2">
+                                Vitrine completa com filtros de preço, bairro/categoria, ficha técnica detalhada e simulador de contato direto com o corretor ou consultor.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mt-4">
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Filtros Inteligentes</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Ficha Técnica</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Simulação Rápida</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex items-center gap-2">
+                        <button onclick="openPreviewModal('Catálogo de Imóveis & Veículos', 'Ideal para corretores autônomos, imobiliárias e garagens que desejam um catálogo próprio profissional para compartilhar nos grupos e Instagram.', ['Busca instantânea por palavra-chave', 'Destaque para oportunidades e lançamentos', 'Botão de agendamento de visita', 'Visual limpo e moderno'])" 
+                                class="flex-1 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-3 rounded-xl border border-slate-700 transition">
+                            Ver Detalhes
+                        </button>
+                        <button onclick="requestProject('Modelo: Catálogo de Imóveis & Veículos')" 
+                                class="flex-1 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold py-3 rounded-xl transition">
+                            Quero Esse Modelo
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Projeto 6: Link na Bio Pro -->
+                <article class="catalog-card bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden flex flex-col justify-between card-hover" data-cat="eventos">
+                    <div>
+                        <div class="h-56 relative overflow-hidden bg-slate-800">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.src='https://placehold.co/800x500/1E293B/818CF8?text=Bio+Link+Pro'"
+                                 alt="Mini-Site Link na Bio" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 bg-pink-500 text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">
+                                Instagram Bio
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-bold text-xl text-white">Mini-Site Exclusivo para Bio</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed mt-2">
+                                Muito além de uma lista comum de links: uma mini-página de luxo com seus serviços, fotos, avaliações e botões personalizados para converter seguidores.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mt-4">
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Ultra Rápido</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Design Premium</span>
+                                <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Foco Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 flex items-center gap-2">
+                        <button onclick="openPreviewModal('Mini-Site Exclusivo para Bio', 'Substitua links genéricos por uma página com a sua identidade visual, fotos dos seus melhores trabalhos e chamadas que geram vendas.', ['Carregamento instantâneo ao clicar no Instagram', 'Botões personalizados para cada serviço', 'Exibição de horários e endereço', 'Entrega expressa em até 24h'])" 
+                                class="flex-1 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-3 rounded-xl border border-slate-700 transition">
+                            Ver Detalhes
+                        </button>
+                        <button onclick="requestProject('Modelo: Mini-Site Exclusivo para Bio')" 
+                                class="flex-1 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold py-3 rounded-xl transition">
+                            Quero Esse Modelo
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPÇÕES & DIFERENCIAIS TÉCNICOS -->
+    <section id="solucoes" class="py-20 sm:py-28 bg-slateDark-950 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-400 font-bold text-xs uppercase tracking-[0.2em]">Opções & Tecnologia</span>
+                <h2 class="font-display font-bold text-3xl sm:text-5xl text-white mt-2">
+                    O Que Você Recebe em Cada Projeto
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">
+                    Não entrego apenas código — entrego uma ferramenta pronta para atrair clientes e facilitar seu atendimento diário.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-slate-900/80 p-7 rounded-3xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-500/15 text-brand-400 flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2">100% Responsivo (Mobile-First)</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Mais de 85% dos seus clientes acessam pelo celular através do Instagram e WhatsApp. Seu site fica perfeito em qualquer tela.
                     </p>
-
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Quero%20transformar%20meu%20sonho%20em%20realidade%20com%20um%20or%C3%A7amento%20de%20decora%C3%A7%C3%A3o." 
-                           target="_blank" rel="noopener noreferrer"
-                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gold-600 hover:bg-gold-700 text-white font-bold px-8 py-4 rounded-2xl shadow-lg shadow-gold-600/20 transition">
-                            <i class="fa-brands fa-whatsapp text-xl"></i>
-                            Solicitar Orçamento no WhatsApp
-                        </a>
-                        <a href="https://instagram.com/decoreventos522" target="_blank" rel="noopener noreferrer"
-                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-gold-50 text-gold-950 border-2 border-gold-300 font-bold px-8 py-4 rounded-2xl transition">
-                            <i class="fa-brands fa-instagram text-pink-600"></i>
-                            @decoreventos522
-                        </a>
-                    </div>
                 </div>
 
-                <div class="lg:col-span-5">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gold-200 aspect-[4/4.5]">
-                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" 
-                                 onerror="this.src='https://placehold.co/800x700/EBDDB5/3D2A12?text=Decor+Eventos'"
-                                 alt="Decor Eventos Vilhena RO" 
-                                 class="w-full h-full object-cover">
+                <div class="bg-slate-900/80 p-7 rounded-3xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-xl mb-5">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2">Integração Inteligente WhatsApp</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Botões estratégicos que já abrem a conversa com a mensagem pronta do produto ou serviço que o cliente escolheu.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/80 p-7 rounded-3xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-500/15 text-purple-400 flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2">Identidade Visual Exclusiva</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Cores, tipografia e estilo desenhados sob medida para transmitir o posicionamento e a elegância da sua marca.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/80 p-7 rounded-3xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/15 text-amber-400 flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2">Velocidade Extrema</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Código limpo e otimizado para abrir instantaneamente, evitando que o cliente desista antes mesmo de ver suas fotos.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/80 p-7 rounded-3xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-500/15 text-sky-400 flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2">Google Maps & Localização</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Mapa interativo e botão de copiar endereço com 1 clique para facilitar a chegada até o seu ponto comercial.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/80 p-7 rounded-3xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-2xl bg-pink-500/15 text-pink-400 flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2">Hospedagem & Suporte</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Auxílio completo na publicação do seu link oficial e suporte próximo para atualizações de fotos, preços e textos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACORDOS, PLANOS & FORMATOS DE PARCERIA -->
+    <section id="acordos" class="py-20 sm:py-28 bg-slateDark-900/60 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-emerald-400 font-bold text-xs uppercase tracking-[0.2em]">Transparência & Acordos</span>
+                <h2 class="font-display font-bold text-3xl sm:text-5xl text-white mt-2">
+                    Formatos de Acordo & Planos
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">
+                    Escolha o modelo de parceria ideal para o momento atual da sua empresa. Sem letras miúdas e com aprovação prévia do visual.
+                </p>
+            </div>
+
+            <!-- 3 Planos / Acordos -->
+            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+                <!-- Plano 1: Essencial -->
+                <div class="bg-slate-900 rounded-3xl border border-slate-800 p-8 flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block bg-slate-800 text-slate-300 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+                            Presença Rápida
+                        </span>
+                        <h3 class="font-display font-bold text-2xl text-white">Acordo Start / Bio Pro</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Ideal para autônomos e negócios locais que precisam profissionalizar o link do Instagram rapidamente.
+                        </p>
+
+                        <div class="my-6 pb-6 border-b border-slate-800">
+                            <span class="text-xs text-slate-400 block">Pagamento Único (Sem Mensalidade)</span>
+                            <span class="font-display font-bold text-3xl text-white mt-1 block">Sob Consulta</span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                Protótipo visual em até 10 minutos
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                Prévia navegável em até 25 minutos
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                Site pronto e publicado em 1 hora
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="requestProject('Acordo Start / Bio Pro')" class="mt-8 w-full bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider py-4 rounded-2xl border border-slate-700 transition">
+                        Combinar Acordo Start
+                    </button>
+                </div>
+
+                <!-- Plano 2: Profissional (Destaque) -->
+                <div class="bg-gradient-to-b from-brand-900/60 to-slate-900 rounded-3xl border-2 border-brand-500 p-8 flex flex-col justify-between relative shadow-2xl shadow-brand-600/20">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-500 text-white text-[10px] font-extrabold uppercase tracking-widest px-4 py-1 rounded-full shadow-md">
+                        Mais Escolhido
+                    </div>
+
+                    <div>
+                        <span class="inline-block bg-brand-500/20 text-brand-300 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+                            Vitrine & Conversão
+                        </span>
+                        <h3 class="font-display font-bold text-2xl text-white">Acordo Profissional</h3>
+                        <p class="text-slate-300 text-xs mt-2 leading-relaxed">
+                            Para empresas, lojas, decoradores e clínicas que desejam um site completo, catálogo filtrável e alta credibilidade.
+                        </p>
+
+                        <div class="my-6 pb-6 border-b border-slate-800">
+                            <span class="text-xs text-brand-300 block">50% na Aprovação do Layout + 50% na Entrega</span>
+                            <span class="font-display font-bold text-3xl text-white mt-1 block">Projeto Completo</span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-200">
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-400"></i>
+                                Design exclusivo de alto padrão (100% personalizado)
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-400"></i>
+                                Catálogo/Galeria interativa com filtros por categoria
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-400"></i>
+                                Sacola de pedidos/orçamentos direta no WhatsApp
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-400"></i>
+                                Integração com Google Maps e avaliações
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-brand-400"></i>
+                                30 dias de suporte gratuito pós-entrega
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="requestProject('Acordo Profissional (Mais Escolhido)')" class="mt-8 w-full bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs uppercase tracking-wider py-4 rounded-2xl shadow-lg shadow-brand-600/30 transition">
+                        Solicitar Acordo Profissional
+                    </button>
+                </div>
+
+                <!-- Plano 3: Parceria Contínua -->
+                <div class="bg-slate-900 rounded-3xl border border-slate-800 p-8 flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block bg-emerald-500/15 text-emerald-400 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+                            Gestão & Atualizações
+                        </span>
+                        <h3 class="font-display font-bold text-2xl text-white">Acordo Parceria VIP</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Para negócios com alta rotatividade de produtos, coleções semanais ou promoções constantes.
+                        </p>
+
+                        <div class="my-6 pb-6 border-b border-slate-800">
+                            <span class="text-xs text-slate-400 block">Criação + Acompanhamento Mensal</span>
+                            <span class="font-display font-bold text-3xl text-white mt-1 block">Sob Medida</span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                Tudo incluso do Acordo Profissional
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                Troca frequente de fotos, preços e banners
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                Configuração de domínio próprio (.com.br)
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                Prioridade máxima no suporte via WhatsApp
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                Otimização contínua para Google e Instagram
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="requestProject('Acordo Parceria VIP')" class="mt-8 w-full bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider py-4 rounded-2xl border border-slate-700 transition">
+                        Conversar sobre Parceria VIP
+                    </button>
+                </div>
+            </div>
+
+            <!-- Garantias do Acordo (4 Etapas Ultra-Rápidas) -->
+            <div class="mt-16 bg-slate-900/90 border border-slate-800 rounded-3xl p-8 sm:p-10">
+                <h3 class="font-display font-bold text-xl sm:text-2xl text-white text-center mb-8">
+                    Cronograma Expresso de Entrega (Site Pronto em 1 Hora)
+                </h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="flex items-start gap-3.5">
+                        <span class="w-8 h-8 rounded-xl bg-brand-600 text-white font-display font-bold text-sm flex items-center justify-center shrink-0">1</span>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">0 a 10 Minutos: Protótipo</h4>
+                            <p class="text-xs text-slate-400 mt-1">Você envia os dados básicos e em até 10 minutos já recebe o protótipo inicial.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3.5">
+                        <span class="w-8 h-8 rounded-xl bg-brand-600 text-white font-display font-bold text-sm flex items-center justify-center shrink-0">2</span>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Até 25 Minutos: Prévia</h4>
+                            <p class="text-xs text-slate-400 mt-1">Entrego a prévia interativa para você testar no celular e solicitar ajustes.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3.5">
+                        <span class="w-8 h-8 rounded-xl bg-brand-600 text-white font-display font-bold text-sm flex items-center justify-center shrink-0">3</span>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Ajustes & Acordo</h4>
+                            <p class="text-xs text-slate-400 mt-1">Refinamos cada detalhe visual com total transparência e aprovação prévia.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3.5">
+                        <span class="w-8 h-8 rounded-xl bg-emerald-600 text-white font-display font-bold text-sm flex items-center justify-center shrink-0">4</span>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Em 1 Hora: Site Pronto!</h4>
+                            <p class="text-xs text-slate-400 mt-1">Seu site completo vai ao ar pronto para divulgar no Instagram e WhatsApp.</p>
                         </div>
                     </div>
                 </div>
@@ -189,286 +674,156 @@
         </div>
     </section>
 
-    <!-- SERVIÇOS & PILARES -->
-    <section id="servicos" class="py-16 sm:py-24 bg-white border-y border-gold-200">
+    <!-- AVALIAÇÕES DE CLIENTES -->
+    <section id="avaliacoes" class="py-20 sm:py-28 bg-slateDark-950 border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-gold-600 font-bold text-xs uppercase tracking-widest">Nossos Serviços</span>
-                <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-gold-950 mt-2">
-                    Estrutura Completa para o seu Evento
-                </h2>
-                <p class="text-gold-900/70 text-sm sm:text-base mt-2">
-                    Criatividade, qualidade, estilo e bom gosto dedicados a transformar sua comemoração.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gold-50/50 p-8 rounded-3xl border border-gold-200/80 shadow-xs hover:shadow-xl transition">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
-                        <i class="fa-solid fa-hands-holding-child"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-2xl text-gold-950 mb-3">Montagem e Desmontagem</h3>
-                    <p class="text-gold-900/75 text-sm leading-relaxed">
-                        Cuidamos de toda a execução com pontualidade, segurança e dedicação para você aproveitar cada segundo da sua festa.
-                    </p>
-                </div>
-
-                <div class="bg-gold-50/50 p-8 rounded-3xl border border-gold-200/80 shadow-xs hover:shadow-xl transition">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-2xl text-gold-950 mb-3">Cenários Personalizados</h3>
-                    <p class="text-gold-900/75 text-sm leading-relaxed">
-                        Projetos exclusivos planejados sob medida para o tema e estilo da sua festa, criando ambientes inesquecíveis.
-                    </p>
-                </div>
-
-                <div class="bg-gold-50/50 p-8 rounded-3xl border border-gold-200/80 shadow-xs hover:shadow-xl transition">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
-                        <i class="fa-solid fa-boxes-stacked"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-2xl text-gold-950 mb-3">Locações de Itens Decorativos</h3>
-                    <p class="text-gold-900/75 text-sm leading-relaxed">
-                        Amplo acervo de peças, painéis, suportes e adornos de alto padrão para compor a decoração dos seus sonhos.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PORTFÓLIO & FESTAS (TODAS AS CATEGORIAS) -->
-    <section id="portifolio" class="py-16 sm:py-24 bg-stone-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-gold-600 font-bold text-xs uppercase tracking-widest">Portfólio Oficial @decoreeventos522</span>
-                <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-gold-950 mt-2">
-                    Galeria de Eventos & Decorações
-                </h2>
-                <p class="text-gold-900/70 text-sm sm:text-base mt-2">
-                    Filtre abaixo para explorar cada categoria de celebração que criamos em Vilhena - RO.
-                </p>
-            </div>
-
-            <!-- Filtros Interativos -->
-            <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-12">
-                <button onclick="filterGallery('todos')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gold-600 text-white transition shadow-sm">
-                    ✨ Todos os Eventos
-                </button>
-                <button onclick="filterGallery('infantil')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
-                    🎈 Festas Infantis
-                </button>
-                <button onclick="filterGallery('aniversarios')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
-                    🎂 Aniversários
-                </button>
-                <button onclick="filterGallery('mesas')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
-                    🍰 Festas de Mesas
-                </button>
-                <button onclick="filterGallery('decorativos')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
-                    🏛️ Eventos Decorativos
-                </button>
-                <button onclick="filterGallery('casamentos')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
-                    💍 Casamentos
-                </button>
-                <button onclick="filterGallery('chabebe')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
-                    🍼 Chá de Bebê
-                </button>
-            </div>
-
-            <!-- Grid de Imagens -->
-            <div id="gallery-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 1. Infantil -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="infantil">
-                    <div class="h-64 overflow-hidden bg-gold-100 relative">
-                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=80" 
-                             alt="Festas Infantis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-gold-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Festas Infantis
-                        </span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Festas Infantis Encantadoras</h3>
-                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Temas lúdicos e coloridos que transformam o aniversário dos pequenos em um momento mágico.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20as%20festas%20infantis%20no%20site%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
-                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 2. Casamentos -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="casamentos">
-                    <div class="h-64 overflow-hidden bg-gold-100 relative">
-                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=700&q=80" 
-                             alt="Casamentos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Casamentos
-                        </span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Casamentos Sofisticados</h3>
-                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Ambientes românticos, arranjos impecáveis e cenários deslumbrantes para o seu grande dia.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20as%20decora%C3%A7%C3%B5es%20de%20casamento%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
-                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 3. Aniversários -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="aniversarios">
-                    <div class="h-64 overflow-hidden bg-gold-100 relative">
-                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=700&q=80" 
-                             alt="Aniversários" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-gold-700 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Aniversários
-                        </span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Aniversários Exclusivos</h3>
-                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Comemorações adultas e marcos especiais planejados com total estilo e bom gosto.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20de%20anivers%C3%A1rios%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
-                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 4. Festas de Mesas -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="mesas">
-                    <div class="h-64 overflow-hidden bg-gold-100 relative">
-                        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=700&q=80" 
-                             alt="Festas de Mesas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-gold-500 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Festas de Mesas
-                        </span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Festas de Mesas Impecáveis</h3>
-                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Mesas principais ricamente decoradas, bandejas e arranjos que encantam os convidados.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20as%20festas%20de%20mesas%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
-                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 5. Eventos Decorativos -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="decorativos">
-                    <div class="h-64 overflow-hidden bg-gold-100 relative">
-                        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=700&q=80" 
-                             alt="Eventos Decorativos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-gold-900 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Eventos Decorativos
-                        </span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Eventos Decorativos de Alto Padrão</h3>
-                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Projetos marcantes com cenários personalizados em Vilhena - RO.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20eventos%20decorativos." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
-                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 6. Chá de Bebê -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="chabebe">
-                    <div class="h-64 overflow-hidden bg-gold-100 relative">
-                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=700&q=80" 
-                             alt="Chá de Bebê" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-gold-400 text-gold-950 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Chá de Bebê
-                        </span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Chá de Bebê Delicado</h3>
-                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Comemorações afetuosas para celebrar a chegada do novo membro da família.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20as%20decora%C3%A7%C3%B5es%20de%20ch%C3%A1%20de%20beb%C3%A5%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
-                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ESSÊNCIA & DIFERENCIAIS (CRIATIVIDADE, QUALIDADE, ESTILO E BOM GOSTO) -->
-    <section id="essencia" class="py-16 sm:py-24 bg-gold-950 text-gold-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="text-gold-400 font-bold text-xs uppercase tracking-widest">Nossa Essência</span>
-            <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-white mt-2 mb-6">
-                Criatividade, Qualidade, Estilo e Bom Gosto
-            </h2>
-            <p class="text-gold-200/80 text-sm sm:text-base max-w-2xl mx-auto mb-16 leading-relaxed">
-                Cada evento é tratado como uma obra de arte única. Nosso compromisso é entregar atendimento personalizado e transformar o seu sonho em realidade com perfeição.
-            </p>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
-                <div class="bg-gold-900/60 p-6 rounded-3xl border border-gold-800">
-                    <div class="text-gold-400 text-3xl mb-3"><i class="fa-solid fa-lightbulb"></i></div>
-                    <h3 class="font-serif font-bold text-xl text-white mb-2">Criatividade</h3>
-                    <p class="text-xs text-gold-200/70 leading-relaxed">Projetos autorais e ideias inovadoras para que sua festa seja única e surpreendente.</p>
-                </div>
-                <div class="bg-gold-900/60 p-6 rounded-3xl border border-gold-800">
-                    <div class="text-gold-400 text-3xl mb-3"><i class="fa-solid fa-gem"></i></div>
-                    <h3 class="font-serif font-bold text-xl text-white mb-2">Qualidade</h3>
-                    <p class="text-xs text-gold-200/70 leading-relaxed">Materiais de alto padrão, rigor no acabamento e cenários impecáveis.</p>
-                </div>
-                <div class="bg-gold-900/60 p-6 rounded-3xl border border-gold-800">
-                    <div class="text-gold-400 text-3xl mb-3"><i class="fa-solid fa-crown"></i></div>
-                    <h3 class="font-serif font-bold text-xl text-white mb-2">Estilo & Bom Gosto</h3>
-                    <p class="text-xs text-gold-200/70 leading-relaxed">Harmonia perfeita de cores, móveis e adornos que encantam a todos os convidados.</p>
-                </div>
-                <div class="bg-gold-900/60 p-6 rounded-3xl border border-gold-800">
-                    <div class="text-gold-400 text-3xl mb-3"><i class="fa-solid fa-headset"></i></div>
-                    <h3 class="font-serif font-bold text-xl text-white mb-2">Atendimento Personalizado</h3>
-                    <p class="text-xs text-gold-200/70 leading-relaxed">Ouvimos cada desejo seu para criar um projeto sob medida para a sua celebração.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- INSTAGRAM BANNER -->
-    <section class="py-12 bg-gradient-to-r from-pink-600 via-gold-600 to-amber-700 text-white">
-        <div class="max-w-5xl mx-auto px-4 text-center space-y-4">
-            <div class="w-16 h-16 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-3xl mx-auto shadow-xl">
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-            <h3 class="font-serif font-bold text-3xl sm:text-4xl">Siga @decoreeventos522 no Instagram</h3>
-            <p class="text-white/90 text-sm sm:text-base max-w-xl mx-auto">
-                Acompanhe as montagens mais recentes, bastidores de festas infantis e casamentos em Vilhena - RO.
-            </p>
-            <div class="pt-2">
-                <a href="https://instagram.com/decoreeventos522" target="_blank" rel="noopener noreferrer"
-                   class="inline-flex items-center gap-2.5 bg-white text-stone-900 font-bold px-8 py-4 rounded-2xl shadow-xl hover:bg-stone-100 transition text-sm">
-                    <i class="fa-brands fa-instagram text-pink-600 text-xl"></i>
-                    Ver Perfil @decoreeventos522
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA CONTATO -->
-    <section id="contato" class="py-16 sm:py-24 bg-white border-t border-gold-200">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-br from-gold-900 to-gold-950 text-white rounded-3xl p-8 sm:p-12 text-center shadow-2xl relative overflow-hidden">
-                <div class="relative z-10 max-w-2xl mx-auto space-y-6">
-                    <span class="bg-gold-800 text-gold-200 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest inline-block">
-                        Transforme seu Sonho
-                    </span>
-                    <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-white">
-                        Sua festa inesquecível começa aqui!
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+                <div>
+                    <span class="text-amber-400 font-bold text-xs uppercase tracking-[0.2em]">Prova Social</span>
+                    <h2 class="font-display font-bold text-3xl sm:text-5xl text-white mt-2">
+                        Avaliações de Clientes
                     </h2>
-                    <p class="text-gold-200 text-sm sm:text-base leading-relaxed">
-                        Entre em contato agora mesmo com a equipe da <strong>Decor Eventos</strong> em Vilhena - RO e garanta a data do seu evento.
+                    <p class="text-slate-400 text-sm sm:text-base mt-2">
+                        O que empreendedores dizem sobre a experiência e o resultado dos sites desenvolvidos.
                     </p>
-                    <div class="pt-2 flex flex-wrap items-center justify-center gap-4">
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20decora%C3%A7%C3%A3o." 
+                </div>
+                <button onclick="openReviewModal()" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 text-xs font-bold uppercase tracking-wider px-5 py-3.5 rounded-xl transition self-start md:self-auto">
+                    <i class="fa-solid fa-star text-amber-400"></i>
+                    Deixar Minha Avaliação
+                </button>
+            </div>
+
+            <div id="reviews-grid" class="grid md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-slate-900 p-7 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Fiquei impressionada com o capricho! Ele montou o site da minha empresa de decoração em tons dourados com todas as fotos separadas por festa e os clientes já chegam no WhatsApp pedindo orçamento."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-5 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-bold flex items-center justify-center text-sm">
+                            AL
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Camila Rocha • Atelier Lumière</h4>
+                            <span class="text-xs text-slate-400">Decoração de Festas • Projeto Conceito</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-900 p-7 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "O catálogo com sacola de reserva facilitou demais o atendimento da loja. As clientes escolhem o look e o tamanho pelo link do Instagram e já mandam tudo pronto para separarmos."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-5 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-brand-500/20 text-brand-400 font-bold flex items-center justify-center text-sm">
+                            ME
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Juliana Alves • Maison Éclat</h4>
+                            <span class="text-xs text-slate-400">Moda Feminina • Projeto Conceito</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-900 p-7 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Atendimento super transparente e ágil. Antes mesmo de fechar o acordo ele já me mostrou uma ideia visual de como ficaria meu catálogo digital. Recomendo de olhos fechados!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-5 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Rafael Mendes</h4>
+                            <span class="text-xs text-slate-400">Consultor & Empreendedor • RO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (DÚVIDAS FREQUENTES) -->
+    <section id="faq" class="py-20 bg-slateDark-900/40 border-b border-slate-800/80">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-400 font-bold text-xs uppercase tracking-[0.2em]">Perguntas Frequentes</span>
+                <h2 class="font-display font-bold text-3xl sm:text-4xl text-white mt-2">
+                    Tire Suas Dúvidas
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-slate-900 border border-slate-800 rounded-2xl p-6 open:border-brand-500/50 transition">
+                    <summary class="flex items-center justify-between font-bold text-white text-sm sm:text-base cursor-pointer list-none">
+                        <span>Preciso pagar mensalidade para ter meu site no ar?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-400 text-xs group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mt-3">
+                        Não! Nos planos Start e Profissional o investimento é único pela criação do seu site. Você só tem custo recorrente caso opte por registrar um domínio personalizado (.com.br) ou contrate o acompanhamento mensal VIP.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-900 border border-slate-800 rounded-2xl p-6 open:border-brand-500/50 transition">
+                    <summary class="flex items-center justify-between font-bold text-white text-sm sm:text-base cursor-pointer list-none">
+                        <span>Em quanto tempo meu site fica pronto?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-400 text-xs group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mt-3">
+                        Trabalho com fluxo ágil de Web Designer Profissional: entrego o <strong class="text-white">protótipo em até 10 minutos</strong>, a <strong class="text-white">prévia completa em até 25 minutos</strong> e o <strong class="text-emerald-400">site 100% pronto em 1 hora</strong>!
+                    </p>
+                </details>
+
+                <details class="group bg-slate-900 border border-slate-800 rounded-2xl p-6 open:border-brand-500/50 transition">
+                    <summary class="flex items-center justify-between font-bold text-white text-sm sm:text-base cursor-pointer list-none">
+                        <span>Consigo colocar o link direto na bio do meu Instagram e WhatsApp?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-400 text-xs group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mt-3">
+                        Sim! O site já é entregue publicado com um link seguro (HTTPS) pronto para você colar na bio do Instagram, no perfil comercial do WhatsApp e enviar para seus clientes.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL & CONTATO -->
+    <section id="contato" class="py-20 sm:py-28">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-600 via-brand-700 to-purple-800 rounded-[2.5rem] p-8 sm:p-14 text-center shadow-2xl relative overflow-hidden">
+                <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+                    <span class="bg-white/15 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest inline-block">
+                        Vamos Começar?
+                    </span>
+                    <h2 class="font-display font-bold text-3xl sm:text-5xl text-white leading-tight">
+                        Pronto para elevar o nível do seu negócio na internet?
+                    </h2>
+                    <p class="text-indigo-100 text-sm sm:text-base leading-relaxed">
+                        Me chame agora mesmo e conte qual é o seu ramo. Monto uma proposta personalizada sem compromisso para você.
+                    </p>
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="https://wa.me/5569993696263?text=Ol%C3%A1%20Gustavo!%20Vi%20seu%20site%20de%20Web%20Designer%20Profissional%20e%20quero%20meu%20prot%C3%B3tipo%20em%2010%20minutos!" 
                            target="_blank" rel="noopener noreferrer"
-                           class="inline-flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-2xl shadow-lg transition text-base">
-                            <i class="fa-brands fa-whatsapp text-xl"></i>
-                            WhatsApp (69) 99600-6585
-                        </a>
-                        <a href="https://instagram.com/decoreeventos522" 
-                           target="_blank" rel="noopener noreferrer"
-                           class="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4 rounded-2xl transition text-base">
-                            <i class="fa-brands fa-instagram text-pink-400 text-xl"></i>
-                            Instagram @decoreeventos522
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white hover:bg-slate-100 text-slate-950 font-extrabold px-8 py-4 rounded-2xl shadow-xl transition text-sm sm:text-base">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-xl"></i>
+                            WhatsApp Business: +55 (69) 99369-6263
                         </a>
                     </div>
                 </div>
@@ -477,49 +832,231 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gold-950 text-gold-300/70 py-12 border-t border-gold-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
-            <span class="font-serif font-bold text-2xl text-white block">Decor Eventos</span>
-            <p class="text-xs text-gold-300">@decoreeventos522 • Atendimento em Vilhena - RO • WhatsApp: (69) 99600-6585</p>
-            <div class="flex items-center justify-center gap-4 pt-2">
-                <a href="https://instagram.com/decoreeventos522" target="_blank" rel="noopener noreferrer" class="text-xs text-pink-400 hover:underline">Instagram</a>
-                <span>•</span>
-                <a href="https://wa.me/5569996006585" target="_blank" rel="noopener noreferrer" class="text-xs text-emerald-400 hover:underline">WhatsApp</a>
-            </div>
-            <p class="text-[11px] text-gold-400/50 pt-2">&copy; <span id="year"></span> Decor Eventos. Todos os direitos reservados.</p>
+    <footer class="bg-slateDark-950 border-t border-slate-800/80 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <span class="font-display font-bold text-xl text-white block">Gustavo <span class="text-brand-400">Web Studio</span></span>
+            <p class="text-xs text-slate-400">Web Designer Profissional • Protótipo em 10 min • Prévia em 25 min • Site Pronto em 1 Hora</p>
+            <p class="text-xs text-emerald-400 font-semibold">WhatsApp Business: +55 (69) 99369-6263 • Vilhena - RO</p>
+            <p class="text-[11px] text-slate-500 pt-2">&copy; <span id="year"></span> Gustavo Web Studio. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <!-- WHATSAPP FLUTUANTE -->
-    <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Decor%20Eventos%20(%40decoreeventos522)%20e%20quero%20um%20or%C3%A7amento." 
+    <a href="https://wa.me/5569993696263?text=Ol%C3%A1%20Gustavo!%20Quero%20solicitar%20um%20projeto%20de%20site." 
        target="_blank" rel="noopener noreferrer"
-       aria-label="WhatsApp"
-       class="fixed bottom-6 right-6 z-50 wa-glow w-16 h-16 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center text-3xl shadow-2xl transition-transform hover:scale-105">
+       aria-label="WhatsApp Business Gustavo"
+       class="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center text-3xl shadow-2xl transition-transform hover:scale-105">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+                <div>
+                    <span class="text-[10px] uppercase tracking-widest text-brand-400 font-bold">Detalhes do Projeto</span>
+                    <h3 id="modal-title" class="font-display font-bold text-2xl text-white mt-1">Título</h3>
+                </div>
+                <button onclick="closePreviewModal()" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <p id="modal-desc" class="text-slate-300 text-sm leading-relaxed"></p>
+            <div class="bg-slate-950/60 border border-slate-800 rounded-2xl p-4">
+                <span class="text-xs font-bold text-white block mb-2.5">Recursos inclusos neste modelo:</span>
+                <ul id="modal-features" class="space-y-2 text-xs text-slate-300"></ul>
+            </div>
+            <div class="flex items-center gap-3 pt-2">
+                <button onclick="closePreviewModal()" class="flex-1 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs py-3.5 rounded-xl transition">
+                    Fechar
+                </button>
+                <button id="modal-cta-btn" class="flex-1 bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs py-3.5 rounded-xl transition">
+                    Solicitar Este Modelo
+                </button>
+            </div>
+        </div>
+    </div>
 
-    <!-- SCRIPT DE FILTRAGEM -->
+    <!-- MODAL DE CONFIGURAÇÃO DO SEU WHATSAPP E INSTAGRAM -->
+    <div id="config-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl space-y-5">
+            <div class="flex items-center justify-between">
+                <h3 class="font-display font-bold text-xl text-white">Configurar Seus Contatos</h3>
+                <button onclick="closeConfigModal()" class="w-8 h-8 rounded-xl bg-slate-800 text-slate-300 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Insira seu número de WhatsApp (com DDD) para que todos os botões de orçamento do site redirecionem diretamente para você.
+            </p>
+            <div class="space-y-3">
+                <div>
+                    <label class="text-xs font-bold text-slate-300 block mb-1">Seu WhatsApp (Ex: 5569999999999)</label>
+                    <input type="text" id="input-my-wa" placeholder="55699..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm outline-none focus:border-brand-500">
+                </div>
+                <div>
+                    <label class="text-xs font-bold text-slate-300 block mb-1">Seu Nome / Marca</label>
+                    <input type="text" id="input-my-name" value="Gustavo Web Studio" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm outline-none focus:border-brand-500">
+                </div>
+            </div>
+            <button onclick="saveMyConfig()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl transition">
+                Salvar Configurações
+            </button>
+        </div>
+    </div>
+
+    <!-- MODAL DE ADICIONAR AVALIAÇÃO -->
+    <div id="review-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl space-y-4">
+            <div class="flex items-center justify-between">
+                <h3 class="font-display font-bold text-xl text-white">Publicar Avaliação</h3>
+                <button onclick="closeReviewModal()" class="w-8 h-8 rounded-xl bg-slate-800 text-slate-300 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="space-y-3">
+                <div>
+                    <label class="text-xs font-bold text-slate-300 block mb-1">Seu Nome ou Empresa</label>
+                    <input type="text" id="rev-name" placeholder="Ex: Maria Silva - Loja Bela" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm outline-none focus:border-brand-500">
+                </div>
+                <div>
+                    <label class="text-xs font-bold text-slate-300 block mb-1">Segmento / Cidade</label>
+                    <input type="text" id="rev-role" placeholder="Ex: Confeitaria • Vilhena - RO" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm outline-none focus:border-brand-500">
+                </div>
+                <div>
+                    <label class="text-xs font-bold text-slate-300 block mb-1">Seu Depoimento</label>
+                    <textarea id="rev-text" rows="3" placeholder="Conte como foi sua experiência..." class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm outline-none focus:border-brand-500"></textarea>
+                </div>
+            </div>
+            <button onclick="submitNewReview()" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl transition">
+                Adicionar Avaliação ao Site
+            </button>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-emerald-600 text-white text-xs font-bold px-5 py-3 rounded-full shadow-2xl opacity-0 pointer-events-none transition-opacity duration-300">
+        Configuração salva com sucesso!
+    </div>
+
     <script>
+        let myWhatsApp = '5569993696263';
+
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('year').textContent = new Date().getFullYear();
+            const inputWa = document.getElementById('input-my-wa');
+            if (inputWa) inputWa.value = myWhatsApp;
         });
 
-        function filterGallery(category) {
-            const cards = document.querySelectorAll('.gallery-card');
-            const buttons = document.querySelectorAll('.filter-btn');
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.textContent = msg;
+            toast.classList.remove('opacity-0');
+            setTimeout(() => toast.classList.add('opacity-0'), 2800);
+        }
 
-            buttons.forEach(btn => {
-                btn.className = "filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm";
+        function filterCatalog(cat) {
+            const cards = document.querySelectorAll('.catalog-card');
+            const btns = document.querySelectorAll('.cat-btn');
+
+            btns.forEach(b => {
+                b.className = 'cat-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition';
             });
-            event.currentTarget.className = "filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gold-600 text-white transition shadow-sm";
+            event.currentTarget.className = 'cat-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-brand-600 text-white transition';
 
             cards.forEach(card => {
-                if (category === 'todos' || card.dataset.category === category) {
-                    card.style.display = 'block';
+                if (cat === 'todos' || card.dataset.cat === cat) {
+                    card.style.display = 'flex';
                 } else {
                     card.style.display = 'none';
                 }
             });
+        }
+
+        function requestProject(subject) {
+            const msg = encodeURIComponent(`Olá Gustavo! Vi seu portfólio de Web Designer Profissional e tenho interesse em: ${subject}. Quero ver o protótipo em 10 minutos!`);
+            window.open(`https://wa.me/${myWhatsApp}?text=${msg}`, '_blank', 'noopener,noreferrer');
+        }
+
+        // Preview Modal
+        function openPreviewModal(title, desc, features) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-desc').textContent = desc;
+            document.getElementById('modal-features').innerHTML = features.map(f => `
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                    <span>${f}</span>
+                </li>
+            `).join('');
+            document.getElementById('modal-cta-btn').onclick = () => {
+                closePreviewModal();
+                requestProject(`Modelo: ${title}`);
+            };
+            document.getElementById('preview-modal').classList.remove('hidden');
+        }
+
+        function closePreviewModal() {
+            document.getElementById('preview-modal').classList.add('hidden');
+        }
+
+        // Config Modal
+        function openConfigModal() {
+            document.getElementById('config-modal').classList.remove('hidden');
+        }
+        function closeConfigModal() {
+            document.getElementById('config-modal').classList.add('hidden');
+        }
+        function saveMyConfig() {
+            const raw = document.getElementById('input-my-wa').value.replace(/\D/g, '');
+            if (raw.length >= 10) {
+                myWhatsApp = raw.startsWith('55') ? raw : '55' + raw;
+                localStorage.setItem('gustavo_wa', myWhatsApp);
+                closeConfigModal();
+                showToast('Seu WhatsApp foi configurado no site!');
+            } else {
+                showToast('Digite um número válido com DDD!');
+            }
+        }
+
+        // Review Modal
+        function openReviewModal() {
+            document.getElementById('review-modal').classList.remove('hidden');
+        }
+        function closeReviewModal() {
+            document.getElementById('review-modal').classList.add('hidden');
+        }
+        function submitNewReview() {
+            const name = document.getElementById('rev-name').value.trim();
+            const role = document.getElementById('rev-role').value.trim() || 'Cliente Verificado';
+            const text = document.getElementById('rev-text').value.trim();
+
+            if (!name || !text) {
+                showToast('Preencha seu nome e depoimento!');
+                return;
+            }
+
+            const initials = name.substring(0, 2).toUpperCase();
+            const grid = document.getElementById('reviews-grid');
+            const card = document.createElement('div');
+            card.className = 'bg-slate-900 p-7 rounded-3xl border border-brand-500/40 flex flex-col justify-between';
+            card.innerHTML = `
+                <div>
+                    <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">"${text}"</p>
+                </div>
+                <div class="flex items-center gap-3 mt-6 pt-5 border-t border-slate-800">
+                    <div class="w-10 h-10 rounded-full bg-brand-500/20 text-brand-400 font-bold flex items-center justify-center text-sm">
+                        ${initials}
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">${name}</h4>
+                        <span class="text-xs text-slate-400">${role}</span>
+                    </div>
+                </div>
+            `;
+            grid.prepend(card);
+            document.getElementById('rev-name').value = '';
+            document.getElementById('rev-role').value = '';
+            document.getElementById('rev-text').value = '';
+            closeReviewModal();
+            showToast('Avaliação publicada com sucesso!');
         }
     </script>
 </body>
