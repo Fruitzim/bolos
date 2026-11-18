@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decore Eventos | Decoração de Festas e Eventos em Vilhena - RO</title>
-    <meta name="description" content="Decoração de festas e eventos em Vilhena. Transformando seu sonho em realidade, cenários personalizados, montagem, desmontagem e locação de itens.">
+    <title>Decor Eventos | Vilhena - RO</title>
+    <meta name="description" content="Transformando seu sonho em realidade. Festas infantis, aniversários, festas de mesas, eventos decorativos, casamentos, chá de bebê, cenários personalizados e locação em Vilhena - RO. @decoreeventossr">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -23,16 +23,20 @@
                 extend: {
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
                     },
                     colors: {
-                        party: {
-                            50: '#F9F5FF',
-                            100: '#F2EAFF',
-                            200: '#E5D5FF',
-                            500: '#9B51E0',
-                            600: '#7B3FE4',
-                            700: '#5E2BB8',
+                        gold: {
+                            50: '#FDFBF7',
+                            100: '#F6EEDB',
+                            200: '#EBDDB5',
+                            300: '#D5BC82',
+                            400: '#C5A059',
+                            500: '#B08339',
+                            600: '#966D2D',
+                            700: '#7A5524',
+                            900: '#3D2A12',
+                            950: '#22170A',
                         }
                     }
                 }
@@ -42,16 +46,16 @@
 
     <style>
         body {
-            background-color: #FAFAFC;
-            color: #1A1A1E;
+            background-color: #FDFBF7;
+            color: #22170A;
             overflow-x: hidden;
         }
         .glass-nav {
-            background: rgba(250, 250, 252, 0.9);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: rgba(253, 251, 247, 0.94);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
         }
-        @keyframes pulse-ring {
+        @keyframes pulse-gold {
             0% { transform: scale(0.95); opacity: 0.8; }
             70% { transform: scale(1.25); opacity: 0; }
             100% { transform: scale(1.25); opacity: 0; }
@@ -63,27 +67,31 @@
             border-radius: 9999px;
             background-color: #25D366;
             z-index: -1;
-            animation: pulse-ring 2s infinite;
+            animation: pulse-gold 2s infinite;
         }
     </style>
 </head>
-<body class="antialiased selection:bg-purple-500 selection:text-white">
+<body class="antialiased selection:bg-gold-500 selection:text-white">
 
-    <!-- TOP BAR -->
-    <div class="bg-purple-950 text-purple-100 text-xs py-2 px-4">
+    <!-- TOP BAR DOURADA -->
+    <div class="bg-gold-950 text-gold-100 text-xs py-2.5 px-4 border-b border-gold-900">
         <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
             <div class="flex items-center gap-4">
                 <span class="inline-flex items-center gap-1.5 font-medium text-emerald-400">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    Agenda de Eventos Aberta em Vilhena
+                    Transformando seu sonho em realidade em Vilhena
                 </span>
-                <span class="hidden md:inline-flex items-center gap-1.5 text-purple-200/80">
-                    <i class="fa-solid fa-location-dot text-purple-400"></i>
-                    Atendimento em Vilhena - RO
+                <span class="hidden md:inline-flex items-center gap-1.5 text-gold-200/80">
+                    <i class="fa-solid fa-location-dot text-gold-400"></i>
+                    Vilhena - RO
                 </span>
             </div>
             <div class="flex items-center gap-4 ml-auto sm:ml-0">
-                <a href="https://wa.me/5569996006585" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-purple-100 hover:text-white transition font-medium">
+                <a href="https://instagram.com/decoreventos522" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-gold-100 hover:text-white transition font-medium">
+                    <i class="fa-brands fa-instagram text-pink-400"></i>
+                    @decoreventos522
+                </a>
+                <a href="https://wa.me/5569996006585" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-gold-100 hover:text-white transition font-medium">
                     <i class="fa-brands fa-whatsapp text-emerald-400"></i>
                     (69) 99600-6585
                 </a>
@@ -92,36 +100,42 @@
     </div>
 
     <!-- NAVBAR -->
-    <header class="sticky top-0 z-45 glass-nav border-b border-purple-100 shadow-xs">
+    <header class="sticky top-0 z-45 glass-nav border-b border-gold-200/60 shadow-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20">
                 <a href="#inicio" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+                    <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-crown text-lg"></i>
                     </div>
                     <div>
-                        <span class="font-serif font-extrabold text-lg sm:text-xl text-stone-900 block leading-none">
-                            Decore Eventos
+                        <span class="font-serif font-extrabold text-base sm:text-xl lg:text-2xl text-gold-950 block leading-none">
+                            Decor Eventos
                         </span>
-                        <span class="text-[10px] uppercase tracking-wider text-purple-600 font-bold">
-                            @decoreeventossr • Vilhena
+                        <span class="text-[10px] uppercase tracking-widest text-gold-600 font-bold">
+                            @decoreventos522 • Vilhena
                         </span>
                     </div>
                 </a>
 
-                <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-stone-600">
-                    <a href="#inicio" class="hover:text-purple-600 transition">Início</a>
-                    <a href="#servicos" class="hover:text-purple-600 transition">Serviços</a>
-                    <a href="#galeria" class="hover:text-purple-600 transition">Cenários & Temas</a>
-                    <a href="#contato" class="hover:text-purple-600 transition">Orçamento</a>
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-gold-900/80">
+                    <a href="#inicio" class="hover:text-gold-600 transition">Início</a>
+                    <a href="#servicos" class="hover:text-gold-600 transition">Serviços</a>
+                    <a href="#portifolio" class="hover:text-gold-600 transition">Portfólio & Festas</a>
+                    <a href="#essencia" class="hover:text-gold-600 transition">Essência & Qualidade</a>
+                    <a href="#contato" class="hover:text-gold-600 transition">Orçamento</a>
                 </nav>
 
-                <div class="flex items-center gap-3">
-                    <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Decore%20Eventos%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
+                <div class="flex items-center gap-2.5 sm:gap-3">
+                    <a href="https://instagram.com/decoreeventos522" target="_blank" rel="noopener noreferrer"
+                       aria-label="Instagram @decoreventos522"
+                       class="w-10 h-10 rounded-xl bg-pink-50 hover:bg-pink-100 text-pink-600 border border-pink-200 flex items-center justify-center transition shadow-xs">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Decor%20Eventos%20(%40decoreventos522)%20e%20gostaria%20de%20um%20or%C3%A7amento." 
                        target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl shadow-md transition">
+                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-xl shadow-md transition">
                         <i class="fa-brands fa-whatsapp text-lg"></i>
-                        <span class="hidden sm:inline">Orçamento WhatsApp</span>
+                        <span class="hidden sm:inline">WhatsApp</span>
                     </a>
                 </div>
             </div>
@@ -129,44 +143,45 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section id="inicio" class="relative overflow-hidden bg-gradient-to-b from-purple-50/70 via-purple-50/20 to-transparent pt-12 pb-20 sm:pt-20 sm:pb-28">
+    <section id="inicio" class="relative overflow-hidden bg-gradient-to-b from-gold-100/70 via-gold-50/20 to-transparent pt-12 pb-20 sm:pt-20 sm:pb-28">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-10 items-center">
                 <div class="lg:col-span-7 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 bg-white border border-purple-200 px-4 py-1.5 rounded-full mb-6 shadow-xs">
-                        <i class="fa-solid fa-star text-purple-500 text-xs"></i>
-                        <span class="text-xs font-bold text-stone-850">@decoreeventossr • Atendimento em Vilhena</span>
+                    <div class="inline-flex items-center gap-2 bg-white border border-gold-300 px-4 py-1.5 rounded-full mb-6 shadow-xs">
+                        <i class="fa-solid fa-sparkles text-gold-600 text-sm"></i>
+                        <span class="text-xs font-bold text-gold-950">Transformando seu sonho em realidade</span>
                     </div>
 
-                    <h1 class="font-serif font-extrabold text-4xl sm:text-5xl lg:text-6xl text-stone-900 leading-[1.12] tracking-tight mb-6">
-                        Infantil, Adulto e Casamentos: sua festa do jeitinho que você <span class="text-purple-600">sonhou!</span>
+                    <h1 class="font-serif font-extrabold text-4xl sm:text-6xl lg:text-7xl text-gold-950 leading-[1.08] tracking-tight mb-6">
+                        Sua festa do jeitinho que você sempre <span class="italic text-gold-600">sonhou</span>.
                     </h1>
 
-                    <p class="text-base sm:text-lg text-stone-600 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8">
-                        Transformando sonhos em realidade em Vilhena - RO. Cenários personalizados, montagem e locação para aniversários infantis, festas adultas e casamentos inesquecíveis.
+                    <p class="text-base sm:text-lg text-gold-900/80 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8">
+                        Criatividade, qualidade, estilo e bom gosto em cada detalhe. Especialistas em festas infantis, aniversários, festas de mesas, casamentos, chá de bebê e eventos decorativos em Vilhena - RO.
                     </p>
 
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Decore%20Eventos%20(@decoreeventossr)%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento." 
+                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Quero%20transformar%20meu%20sonho%20em%20realidade%20com%20um%20or%C3%A7amento%20de%20decora%C3%A7%C3%A3o." 
                            target="_blank" rel="noopener noreferrer"
-                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 py-4 rounded-2xl shadow-lg shadow-purple-600/20 transition">
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gold-600 hover:bg-gold-700 text-white font-bold px-8 py-4 rounded-2xl shadow-lg shadow-gold-600/20 transition">
                             <i class="fa-brands fa-whatsapp text-xl"></i>
                             Solicitar Orçamento no WhatsApp
                         </a>
-                        <a href="#galeria" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-purple-50 text-stone-800 hover:text-purple-700 border-2 border-stone-200 hover:border-purple-300 font-bold px-8 py-4 rounded-2xl transition">
-                            <i class="fa-solid fa-images"></i>
-                            Ver Portfólio de Festas
+                        <a href="https://instagram.com/decoreventos522" target="_blank" rel="noopener noreferrer"
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-gold-50 text-gold-950 border-2 border-gold-300 font-bold px-8 py-4 rounded-2xl transition">
+                            <i class="fa-brands fa-instagram text-pink-600"></i>
+                            @decoreventos522
                         </a>
                     </div>
                 </div>
 
                 <div class="lg:col-span-5">
                     <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-purple-100">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gold-200 aspect-[4/4.5]">
                             <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" 
-                                 onerror="this.src='https://placehold.co/800x700/E5D5FF/7B3FE4?text=Decore+Eventos'"
-                                 alt="Decoração de Casamentos e Festas Decore Eventos Vilhena" 
-                                 class="w-full h-80 sm:h-96 object-cover">
+                                 onerror="this.src='https://placehold.co/800x700/EBDDB5/3D2A12?text=Decor+Eventos'"
+                                 alt="Decor Eventos Vilhena RO" 
+                                 class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -174,215 +189,286 @@
         </div>
     </section>
 
-    <!-- SERVIÇOS -->
-    <section id="servicos" class="py-16 sm:py-24 bg-white border-y border-purple-100">
+    <!-- SERVIÇOS & PILARES -->
+    <section id="servicos" class="py-16 sm:py-24 bg-white border-y border-gold-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-purple-700 font-bold text-xs uppercase tracking-widest">Nossa Especialidade</span>
-                <h2 class="font-serif font-extrabold text-3xl sm:text-4xl text-stone-900 mt-2">
-                    Serviços para o seu Evento
+                <span class="text-gold-600 font-bold text-xs uppercase tracking-widest">Nossos Serviços</span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-gold-950 mt-2">
+                    Estrutura Completa para o seu Evento
                 </h2>
-                <p class="text-stone-600 text-sm sm:text-base mt-2">
-                    Cuidamos de cada detalhe com dedicação para surpreender seus convidados.
+                <p class="text-gold-900/70 text-sm sm:text-base mt-2">
+                    Criatividade, qualidade, estilo e bom gosto dedicados a transformar sua comemoração.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-purple-50/50 p-8 rounded-3xl border border-purple-100 shadow-xs hover:shadow-lg transition">
-                    <div class="w-14 h-14 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
-                        <i class="fa-solid fa-hand-holding-heart"></i>
+                <div class="bg-gold-50/50 p-8 rounded-3xl border border-gold-200/80 shadow-xs hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
+                        <i class="fa-solid fa-hands-holding-child"></i>
                     </div>
-                    <h3 class="font-serif font-bold text-xl text-stone-900 mb-3">Montagem e Desmontagem</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">
-                        Pontualidade e cuidado total no dia do evento. Nossa equipe monta e desmonta toda a decoração para você aproveitar a festa sem preocupações.
+                    <h3 class="font-serif font-bold text-2xl text-gold-950 mb-3">Montagem e Desmontagem</h3>
+                    <p class="text-gold-900/75 text-sm leading-relaxed">
+                        Cuidamos de toda a execução com pontualidade, segurança e dedicação para você aproveitar cada segundo da sua festa.
                     </p>
                 </div>
 
-                <div class="bg-purple-50/50 p-8 rounded-3xl border border-purple-100 shadow-xs hover:shadow-lg transition">
-                    <div class="w-14 h-14 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
-                        <i class="fa-solid fa-palette"></i>
+                <div class="bg-gold-50/50 p-8 rounded-3xl border border-gold-200/80 shadow-xs hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
                     </div>
-                    <h3 class="font-serif font-bold text-xl text-stone-900 mb-3">Cenários Personalizados</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">
-                        Projetos exclusivos planejados de acordo com o seu tema, cores preferidas e estilo de comemoração (aniversários, chás, festas infantis e adultas).
+                    <h3 class="font-serif font-bold text-2xl text-gold-950 mb-3">Cenários Personalizados</h3>
+                    <p class="text-gold-900/75 text-sm leading-relaxed">
+                        Projetos exclusivos planejados sob medida para o tema e estilo da sua festa, criando ambientes inesquecíveis.
                     </p>
                 </div>
 
-                <div class="bg-purple-50/50 p-8 rounded-3xl border border-purple-100 shadow-xs hover:shadow-lg transition">
-                    <div class="w-14 h-14 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
+                <div class="bg-gold-50/50 p-8 rounded-3xl border border-gold-200/80 shadow-xs hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
                         <i class="fa-solid fa-boxes-stacked"></i>
                     </div>
-                    <h3 class="font-serif font-bold text-xl text-stone-900 mb-3">Locação de Itens Decorativos</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">
-                        Amplo acervo de peças, painéis, suportes, vasos e acessórios de alto padrão para compor produções impecáveis.
+                    <h3 class="font-serif font-bold text-2xl text-gold-950 mb-3">Locações de Itens Decorativos</h3>
+                    <p class="text-gold-900/75 text-sm leading-relaxed">
+                        Amplo acervo de peças, painéis, suportes e adornos de alto padrão para compor a decoração dos seus sonhos.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- GALERIA / CATEGORIAS COMPLETAS (INFANTIL, ADULTO, CASAMENTO) -->
-    <section id="galeria" class="py-16 sm:py-24 bg-stone-50">
+    <!-- PORTFÓLIO & FESTAS (TODAS AS CATEGORIAS) -->
+    <section id="portifolio" class="py-16 sm:py-24 bg-stone-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-purple-700 font-bold text-xs uppercase tracking-widest">Portfólio Completo @decoreeventossr</span>
-                <h2 class="font-serif font-extrabold text-3xl sm:text-4xl text-stone-900 mt-2">
-                    Infantil, Adulto & Casamentos
+                <span class="text-gold-600 font-bold text-xs uppercase tracking-widest">Portfólio Oficial @decoreeventos522</span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-gold-950 mt-2">
+                    Galeria de Eventos & Decorações
                 </h2>
-                <p class="text-stone-600 text-sm sm:text-base mt-2">
-                    Cada evento é único. Conheça nossas decorações para todas as comemorações em Vilhena.
+                <p class="text-gold-900/70 text-sm sm:text-base mt-2">
+                    Filtre abaixo para explorar cada categoria de celebração que criamos em Vilhena - RO.
                 </p>
             </div>
 
-            <!-- Filtros de Categoria -->
-            <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
-                <button onclick="filterGallery('todos')" class="filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-purple-600 text-white transition shadow-sm">
-                    Todos os Eventos
+            <!-- Filtros Interativos -->
+            <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-12">
+                <button onclick="filterGallery('todos')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gold-600 text-white transition shadow-sm">
+                    ✨ Todos os Eventos
                 </button>
-                <button onclick="filterGallery('infantil')" class="filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-stone-700 border border-stone-200 hover:border-purple-300 transition shadow-sm">
-                    🎈 Aniversário Infantil
+                <button onclick="filterGallery('infantil')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
+                    🎈 Festas Infantis
                 </button>
-                <button onclick="filterGallery('adulto')" class="filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-stone-700 border border-stone-200 hover:border-purple-300 transition shadow-sm">
-                    ✨ Festa Adulta
+                <button onclick="filterGallery('aniversarios')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
+                    🎂 Aniversários
                 </button>
-                <button onclick="filterGallery('casamento')" class="filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-stone-700 border border-stone-200 hover:border-purple-300 transition shadow-sm">
-                    💍 Casamentos & Noivados
+                <button onclick="filterGallery('mesas')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
+                    🍰 Festas de Mesas
+                </button>
+                <button onclick="filterGallery('decorativos')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
+                    🏛️ Eventos Decorativos
+                </button>
+                <button onclick="filterGallery('casamentos')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
+                    💍 Casamentos
+                </button>
+                <button onclick="filterGallery('chabebe')" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm">
+                    🍼 Chá de Bebê
                 </button>
             </div>
 
-            <!-- Grid de Imagens de Decoração -->
+            <!-- Grid de Imagens -->
             <div id="gallery-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- 1. Infantil -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm group" data-category="infantil">
-                    <div class="h-64 overflow-hidden bg-purple-100 relative">
+                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="infantil">
+                    <div class="h-64 overflow-hidden bg-gold-100 relative">
                         <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=80" 
-                             alt="Festa Infantil Decore Eventos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-purple-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Infantil
+                             alt="Festas Infantis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-gold-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                            Festas Infantis
                         </span>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-serif font-bold text-xl text-stone-900 mb-2">Aniversários Infantis Temáticos</h3>
-                        <p class="text-stone-600 text-xs leading-relaxed">Temas lúdicos, balões desconstruídos, painéis personalizados e cenários que encantam as crianças em Vilhena.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20a%20decora%C3%A7%C3%A3o%20infantil%20no%20site%20da%20Decore%20Eventos%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-purple-600 hover:text-purple-800">
-                            Orçar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Festas Infantis Encantadoras</h3>
+                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Temas lúdicos e coloridos que transformam o aniversário dos pequenos em um momento mágico.</p>
+                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20as%20festas%20infantis%20no%20site%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
+                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- 2. Casamento -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm group" data-category="casamento">
-                    <div class="h-64 overflow-hidden bg-purple-100 relative">
+                <!-- 2. Casamentos -->
+                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="casamentos">
+                    <div class="h-64 overflow-hidden bg-gold-100 relative">
                         <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=700&q=80" 
-                             alt="Decoração de Casamento Decore Eventos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Casamento
+                             alt="Casamentos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                            Casamentos
                         </span>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-serif font-bold text-xl text-stone-900 mb-2">Casamentos & Noivados</h3>
-                        <p class="text-stone-600 text-xs leading-relaxed">Ambientes românticos, arranjos florais sofisticados, altar personalizado e mesa dos noivos impecável.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20a%20decora%C3%A7%C3%A3o%20de%20casamento%20no%20site%20da%20Decore%20Eventos%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-purple-600 hover:text-purple-800">
-                            Orçar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Casamentos Sofisticados</h3>
+                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Ambientes românticos, arranjos impecáveis e cenários deslumbrantes para o seu grande dia.</p>
+                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20as%20decora%C3%A7%C3%B5es%20de%20casamento%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
+                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- 3. Adulto -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm group" data-category="adulto">
-                    <div class="h-64 overflow-hidden bg-purple-100 relative">
+                <!-- 3. Aniversários -->
+                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="aniversarios">
+                    <div class="h-64 overflow-hidden bg-gold-100 relative">
                         <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=700&q=80" 
-                             alt="Festa Adulta Decore Eventos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Festa Adulta
+                             alt="Aniversários" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-gold-700 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                            Aniversários
                         </span>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-serif font-bold text-xl text-stone-900 mb-2">Aniversários & Festas Adultas</h3>
-                        <p class="text-stone-600 text-xs leading-relaxed">Produções elegantes, modernos painéis geométricos e arranjos marcantes para celebrar marcos especiais.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20a%20decora%C3%A7%C3%A3o%20adulta%20no%20site%20da%20Decore%20Eventos%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-purple-600 hover:text-purple-800">
-                            Orçar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Aniversários Exclusivos</h3>
+                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Comemorações adultas e marcos especiais planejados com total estilo e bom gosto.</p>
+                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20de%20anivers%C3%A1rios%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
+                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- 4. Infantil -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm group" data-category="infantil">
-                    <div class="h-64 overflow-hidden bg-purple-100 relative">
+                <!-- 4. Festas de Mesas -->
+                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="mesas">
+                    <div class="h-64 overflow-hidden bg-gold-100 relative">
                         <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=700&q=80" 
-                             alt="Festa Infantil Decore Eventos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-purple-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Infantil
+                             alt="Festas de Mesas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-gold-500 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                            Festas de Mesas
                         </span>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-serif font-bold text-xl text-stone-900 mb-2">Chá de Bebê & Infantil</h3>
-                        <p class="text-stone-600 text-xs leading-relaxed">Delicadeza e cor em cada detalhe para celebrar a chegada ou o aniversário dos pequenos com muita alegria.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20a%20decora%C3%A7%C3%A3o%20infantil%20no%20site%20da%20Decore%20Eventos%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-purple-600 hover:text-purple-800">
-                            Orçar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Festas de Mesas Impecáveis</h3>
+                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Mesas principais ricamente decoradas, bandejas e arranjos que encantam os convidados.</p>
+                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20as%20festas%20de%20mesas%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
+                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- 5. Casamento -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm group" data-category="casamento">
-                    <div class="h-64 overflow-hidden bg-purple-100 relative">
+                <!-- 5. Eventos Decorativos -->
+                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="decorativos">
+                    <div class="h-64 overflow-hidden bg-gold-100 relative">
                         <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=700&q=80" 
-                             alt="Recepção de Casamento Decore Eventos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Casamento
+                             alt="Eventos Decorativos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-gold-900 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                            Eventos Decorativos
                         </span>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-serif font-bold text-xl text-stone-900 mb-2">Recepções & Cenários de Casamento</h3>
-                        <p class="text-stone-600 text-xs leading-relaxed">Decoração completa de ambientes para o grande dia, unindo classe, romantismo e impecável acabamento.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20a%20decora%C3%A7%C3%A3o%20de%20casamento%20no%20site%20da%20Decore%20Eventos%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-purple-600 hover:text-purple-800">
-                            Orçar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Eventos Decorativos de Alto Padrão</h3>
+                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Projetos marcantes com cenários personalizados em Vilhena - RO.</p>
+                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20eventos%20decorativos." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
+                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- 6. Adulto -->
-                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm group" data-category="adulto">
-                    <div class="h-64 overflow-hidden bg-purple-100 relative">
+                <!-- 6. Chá de Bebê -->
+                <div class="gallery-card bg-white rounded-3xl overflow-hidden border border-gold-200 shadow-sm group" data-category="chabebe">
+                    <div class="h-64 overflow-hidden bg-gold-100 relative">
                         <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=700&q=80" 
-                             alt="Festa Adulta Decore Eventos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
-                            Festa Adulta
+                             alt="Chá de Bebê" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-gold-400 text-gold-950 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                            Chá de Bebê
                         </span>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-serif font-bold text-xl text-stone-900 mb-2">Celebrações Especiais & Aniversários</h3>
-                        <p class="text-stone-600 text-xs leading-relaxed">Cenários exclusivos com iluminação, painéis e arranjos para aniversários inesquecíveis em Vilhena.</p>
-                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20o%20portfólio%20adulto%20no%20site%20da%20Decore%20Eventos%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-purple-600 hover:text-purple-800">
-                            Orçar este tema <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        <h3 class="font-serif font-bold text-2xl text-gold-950 mb-2">Chá de Bebê Delicado</h3>
+                        <p class="text-gold-900/75 text-xs leading-relaxed mb-4">Comemorações afetuosas para celebrar a chegada do novo membro da família.</p>
+                        <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vi%20as%20decora%C3%A7%C3%B5es%20de%20ch%C3%A1%20de%20beb%C3%A5%20e%20quero%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-600 hover:text-gold-800">
+                            Orçar no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESSÊNCIA & DIFERENCIAIS (CRIATIVIDADE, QUALIDADE, ESTILO E BOM GOSTO) -->
+    <section id="essencia" class="py-16 sm:py-24 bg-gold-950 text-gold-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-gold-400 font-bold text-xs uppercase tracking-widest">Nossa Essência</span>
+            <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-white mt-2 mb-6">
+                Criatividade, Qualidade, Estilo e Bom Gosto
+            </h2>
+            <p class="text-gold-200/80 text-sm sm:text-base max-w-2xl mx-auto mb-16 leading-relaxed">
+                Cada evento é tratado como uma obra de arte única. Nosso compromisso é entregar atendimento personalizado e transformar o seu sonho em realidade com perfeição.
+            </p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                <div class="bg-gold-900/60 p-6 rounded-3xl border border-gold-800">
+                    <div class="text-gold-400 text-3xl mb-3"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3 class="font-serif font-bold text-xl text-white mb-2">Criatividade</h3>
+                    <p class="text-xs text-gold-200/70 leading-relaxed">Projetos autorais e ideias inovadoras para que sua festa seja única e surpreendente.</p>
+                </div>
+                <div class="bg-gold-900/60 p-6 rounded-3xl border border-gold-800">
+                    <div class="text-gold-400 text-3xl mb-3"><i class="fa-solid fa-gem"></i></div>
+                    <h3 class="font-serif font-bold text-xl text-white mb-2">Qualidade</h3>
+                    <p class="text-xs text-gold-200/70 leading-relaxed">Materiais de alto padrão, rigor no acabamento e cenários impecáveis.</p>
+                </div>
+                <div class="bg-gold-900/60 p-6 rounded-3xl border border-gold-800">
+                    <div class="text-gold-400 text-3xl mb-3"><i class="fa-solid fa-crown"></i></div>
+                    <h3 class="font-serif font-bold text-xl text-white mb-2">Estilo & Bom Gosto</h3>
+                    <p class="text-xs text-gold-200/70 leading-relaxed">Harmonia perfeita de cores, móveis e adornos que encantam a todos os convidados.</p>
+                </div>
+                <div class="bg-gold-900/60 p-6 rounded-3xl border border-gold-800">
+                    <div class="text-gold-400 text-3xl mb-3"><i class="fa-solid fa-headset"></i></div>
+                    <h3 class="font-serif font-bold text-xl text-white mb-2">Atendimento Personalizado</h3>
+                    <p class="text-xs text-gold-200/70 leading-relaxed">Ouvimos cada desejo seu para criar um projeto sob medida para a sua celebração.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM BANNER -->
+    <section class="py-12 bg-gradient-to-r from-pink-600 via-gold-600 to-amber-700 text-white">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-4">
+            <div class="w-16 h-16 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-3xl mx-auto shadow-xl">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <h3 class="font-serif font-bold text-3xl sm:text-4xl">Siga @decoreeventos522 no Instagram</h3>
+            <p class="text-white/90 text-sm sm:text-base max-w-xl mx-auto">
+                Acompanhe as montagens mais recentes, bastidores de festas infantis e casamentos em Vilhena - RO.
+            </p>
+            <div class="pt-2">
+                <a href="https://instagram.com/decoreeventos522" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2.5 bg-white text-stone-900 font-bold px-8 py-4 rounded-2xl shadow-xl hover:bg-stone-100 transition text-sm">
+                    <i class="fa-brands fa-instagram text-pink-600 text-xl"></i>
+                    Ver Perfil @decoreeventos522
+                </a>
             </div>
         </div>
     </section>
 
     <!-- CTA CONTATO -->
-    <section id="contato" class="py-16 sm:py-24 bg-white border-t border-purple-100">
+    <section id="contato" class="py-16 sm:py-24 bg-white border-t border-gold-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-br from-purple-900 to-purple-950 text-white rounded-3xl p-8 sm:p-12 text-center shadow-2xl relative overflow-hidden">
+            <div class="bg-gradient-to-br from-gold-900 to-gold-950 text-white rounded-3xl p-8 sm:p-12 text-center shadow-2xl relative overflow-hidden">
                 <div class="relative z-10 max-w-2xl mx-auto space-y-6">
-                    <span class="bg-purple-800 text-purple-200 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest inline-block">
-                        Vamos conversar?
+                    <span class="bg-gold-800 text-gold-200 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest inline-block">
+                        Transforme seu Sonho
                     </span>
-                    <h2 class="font-serif font-extrabold text-3xl sm:text-4xl text-white">
+                    <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-white">
                         Sua festa inesquecível começa aqui!
                     </h2>
-                    <p class="text-purple-200 text-sm sm:text-base leading-relaxed">
-                        Entre em contato agora mesmo pelo WhatsApp com a <strong>Decore Eventos</strong> e garanta a data da sua comemoração em Vilhena - RO.
+                    <p class="text-gold-200 text-sm sm:text-base leading-relaxed">
+                        Entre em contato agora mesmo com a equipe da <strong>Decor Eventos</strong> em Vilhena - RO e garanta a data do seu evento.
                     </p>
-                    <div class="pt-2">
+                    <div class="pt-2 flex flex-wrap items-center justify-center gap-4">
                         <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20decora%C3%A7%C3%A3o." 
                            target="_blank" rel="noopener noreferrer"
                            class="inline-flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-2xl shadow-lg transition text-base">
                             <i class="fa-brands fa-whatsapp text-xl"></i>
-                            Chamar no WhatsApp (69) 99600-6585
+                            WhatsApp (69) 99600-6585
+                        </a>
+                        <a href="https://instagram.com/decoreeventos522" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4 rounded-2xl transition text-base">
+                            <i class="fa-brands fa-instagram text-pink-400 text-xl"></i>
+                            Instagram @decoreeventos522
                         </a>
                     </div>
                 </div>
@@ -391,23 +477,28 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-800">
+    <footer class="bg-gold-950 text-gold-300/70 py-12 border-t border-gold-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
-            <span class="font-serif font-bold text-xl text-white block">Decore Eventos (@decoreeventossr)</span>
-            <p class="text-xs text-stone-400">Decoração de Festas e Eventos • Atendimento em Vilhena - RO • WhatsApp: (69) 99600-6585</p>
-            <p class="text-[11px] text-stone-600">&copy; <span id="year"></span> Decore Eventos. Todos os direitos reservados.</p>
+            <span class="font-serif font-bold text-2xl text-white block">Decor Eventos</span>
+            <p class="text-xs text-gold-300">@decoreeventos522 • Atendimento em Vilhena - RO • WhatsApp: (69) 99600-6585</p>
+            <div class="flex items-center justify-center gap-4 pt-2">
+                <a href="https://instagram.com/decoreeventos522" target="_blank" rel="noopener noreferrer" class="text-xs text-pink-400 hover:underline">Instagram</a>
+                <span>•</span>
+                <a href="https://wa.me/5569996006585" target="_blank" rel="noopener noreferrer" class="text-xs text-emerald-400 hover:underline">WhatsApp</a>
+            </div>
+            <p class="text-[11px] text-gold-400/50 pt-2">&copy; <span id="year"></span> Decor Eventos. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <!-- WHATSAPP FLUTUANTE -->
-    <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Decore%20Eventos%20e%20quero%20um%20or%C3%A7amento." 
+    <a href="https://wa.me/5569996006585?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Decor%20Eventos%20(%40decoreeventos522)%20e%20quero%20um%20or%C3%A7amento." 
        target="_blank" rel="noopener noreferrer"
-       aria-label="WhatsApp Decore Eventos"
+       aria-label="WhatsApp"
        class="fixed bottom-6 right-6 z-50 wa-glow w-16 h-16 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center text-3xl shadow-2xl transition-transform hover:scale-105">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- SCRIPT -->
+    <!-- SCRIPT DE FILTRAGEM -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('year').textContent = new Date().getFullYear();
@@ -418,9 +509,9 @@
             const buttons = document.querySelectorAll('.filter-btn');
 
             buttons.forEach(btn => {
-                btn.className = "filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-stone-700 border border-stone-200 hover:border-purple-300 transition shadow-sm";
+                btn.className = "filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gold-950 border border-gold-300 hover:border-gold-500 transition shadow-sm";
             });
-            event.currentTarget.className = "filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-purple-600 text-white transition shadow-sm";
+            event.currentTarget.className = "filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gold-600 text-white transition shadow-sm";
 
             cards.forEach(card => {
                 if (category === 'todos' || card.dataset.category === category) {
